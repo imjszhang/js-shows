@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JS 的个人主页与作品集。">
+  <title>JS · 个人主页</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; background: #f6f4ef; color: #202720; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .container { width: min(100% - 3rem, 64rem); margin-inline: auto; }
+    header, footer { display: flex; justify-content: space-between; align-items: center; padding-block: 1.5rem; }
+    header { border-bottom: 1px solid #d7dcd3; }
+    a { color: #255c44; text-underline-offset: .25em; }
+    a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+    .brand { font: 700 1.25rem ui-monospace, monospace; }
+    .intro { padding-block: clamp(4rem, 12vw, 9rem); }
+    h1 { margin: 0; font-size: clamp(3rem, 12vw, 7rem); letter-spacing: -.08em; line-height: 1; }
+    .intro p { font-size: clamp(1rem, 2.5vw, 1.3rem); margin: 1.5rem 0 0; line-height: 1.7; }
+    .work { border-top: 1px solid #d7dcd3; padding-block: 2rem 4rem; }
+    h2 { margin: 0 0 1rem; font-size: 1.5rem; }
+    .work p { color: #4d5c52; margin: 0; }
+    footer { border-top: 1px solid #d7dcd3; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="brand">JS</span>
+      <nav aria-label="站内导航"><a href="#work">作品</a></nav>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="intro-title">
+        <h1 id="intro-title">你好，我是 JS。</h1>
+        <p>这里是我的个人主页，也是我展示作品的地方。</p>
+      </section>
+      <section class="work" id="work" aria-labelledby="work-title">
+        <h2 id="work-title">作品</h2>
+        <p>作品会陆续发布在这里。</p>
+      </section>
+    </main>
+    <footer><span>JS</span><a href="https://github.com/imjszhang">GitHub</a></footer>
+  </div>
+</body>
+</html>
